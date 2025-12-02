@@ -1,0 +1,21 @@
+{
+    "version": "3.1",
+    "changelog": "• Зеленый фон\n• Добавлена кнопка 'x²' (квадрат)\n• Добавлена кнопка '√' (корень)",
+    "changes": {
+        "bg_color": "#E6FFE6",
+        "buttons": [
+            {
+                "name": "x²",
+                "row": 6,
+                "col": 1,
+                "function": "def x2_func(expression, result_var):\n    if expression:\n        try:\n            expr = expression.replace(' ', '')\n            result = eval(expr) ** 2\n            formatted = str(result)\n            return formatted, formatted\n        except:\n            return expression, 'Ошибка'\n    return expression, expression"
+            },
+            {
+                "name": "√",
+                "row": 6,
+                "col": 2,
+                "function": "def sqrt_func(expression, result_var):\n    if expression:\n        try:\n            expr = expression.replace(' ', '')\n            num = float(expr) if expr else 0.0\n            if num < 0:\n                return expression, 'Ошибка: отрицательное число'\n            result = math.sqrt(num)\n            formatted = str(result)\n            return formatted, formatted\n        except:\n            return expression, 'Ошибка'\n    return expression, expression"
+            }
+        ]
+    }
+}
