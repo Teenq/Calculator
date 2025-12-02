@@ -1,0 +1,21 @@
+{
+    "version": "4.1",
+    "changelog": "• Розовый градиент\n• Добавлена кнопка 'sin'\n• Добавлена кнопка 'cos'",
+    "changes": {
+        "bg_color": "pink",
+        "buttons": [
+            {
+                "name": "sin",
+                "row": 6,
+                "col": 3,
+                "function": "def sin_func(expression, result_var):\n    if expression:\n        try:\n            expr = expression.replace(' ', '')\n            num = float(expr) if expr else 0.0\n            result = math.sin(math.radians(num))\n            formatted = str(round(result, 6))\n            return formatted, formatted\n        except:\n            return expression, 'Ошибка'\n    return expression, expression"
+            },
+            {
+                "name": "cos",
+                "row": 7,
+                "col": 0,
+                "function": "def cos_func(expression, result_var):\n    if expression:\n        try:\n            expr = expression.replace(' ', '')\n            num = float(expr) if expr else 0.0\n            result = math.cos(math.radians(num))\n            formatted = str(round(result, 6))\n            return formatted, formatted\n        except:\n            return expression, 'Ошибка'\n    return expression, expression"
+            }
+        ]
+    }
+}
