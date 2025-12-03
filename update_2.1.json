@@ -1,7 +1,14 @@
 {
     "version": "2.1",
-    "changelog": "• Новый розовый цвет интерфейса\n• Улучшена стабильность работы",
+    "changelog": "Добавлена динамическая загрузка кнопок из JSON конфигурации",
+    "download_url": "https://github.com/Teenq/Calculator/releases/tag/v2.1",
+    "ui_config_url": "https://raw.githubusercontent.com/Teenq/Calculator/main/ui_config.json",
     "changes": {
-        "bg_color": "pink"
+        "bg_color": "#f0f8ff",
+        "new_features": [
+            "Динамические кнопки из JSON",
+            "Загрузка конфигурации с GitHub",
+            "Обновление UI без переустановки"
+        ]
     }
 }
