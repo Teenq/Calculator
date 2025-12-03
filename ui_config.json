@@ -1,0 +1,80 @@
+{
+    "version": "2.0",
+    "description": "Конфигурация интерфейса калькулятора",
+    "buttons": [
+        {
+            "text": "x²",
+            "command_type": "function",
+            "function": "calculate_square",
+            "row": 6,
+            "column": 0,
+            "width": 8
+        },
+        {
+            "text": "√x",
+            "command_type": "function",
+            "function": "calculate_sqrt",
+            "row": 6,
+            "column": 1,
+            "width": 8
+        },
+        {
+            "text": "sin",
+            "command_type": "function",
+            "function": "calculate_sin",
+            "row": 6,
+            "column": 2,
+            "width": 8
+        },
+        {
+            "text": "cos",
+            "command_type": "function",
+            "function": "calculate_cos",
+            "row": 6,
+            "column": 3,
+            "width": 8
+        }
+    ],
+    "additional_frames": [
+        {
+            "type": "frame",
+            "name": "advanced_functions",
+            "row": 7,
+            "column": 0,
+            "columnspan": 4,
+            "padx": 4,
+            "pady": 4,
+            "items": [
+                {
+                    "type": "button",
+                    "text": "Справка",
+                    "command_type": "function",
+                    "function": "show_help",
+                    "width": 12
+                },
+                {
+                    "type": "button",
+                    "text": "О программе",
+                    "command_type": "function",
+                    "function": "show_about",
+                    "width": 12
+                }
+            ]
+        }
+    ],
+    "menu_items": [
+        {
+            "type": "command",
+            "text": "Перезагрузить UI",
+            "function": "refresh_ui_config"
+        },
+        {
+            "type": "separator"
+        },
+        {
+            "type": "command",
+            "text": "Квадрат числа",
+            "function": "calculate_square"
+        }
+    ]
+}
