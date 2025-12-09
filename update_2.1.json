@@ -1,5 +1,5 @@
 {
-    "version": "1.1",
+    "version": "2.1",
     "changelog": "Добавлена динамическая загрузка кнопок из JSON конфигурации",
     "download_url": "https://github.com/Teenq/Calculator/releases/tag/v2.1",
     "ui_config_url": "https://raw.githubusercontent.com/Teenq/Calculator/main/ui_config.json",
