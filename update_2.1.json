@@ -4,7 +4,7 @@
     "download_url": "https://github.com/Teenq/Calculator/releases/tag/v2.1",
     "ui_config_url": "https://raw.githubusercontent.com/Teenq/Calculator/main/ui_config.json",
     "changes": {
-        "bg_color": "#f0f8ff",
+        "bg_color": "#ffc0cb",
         "new_features": [
             "Динамические кнопки из JSON",
             "Загрузка конфигурации с GitHub",
